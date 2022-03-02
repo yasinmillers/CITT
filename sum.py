@@ -36,14 +36,14 @@ print((100 > x).sum())
 p = x*y
 
 print(p.shape)
-print(p.reshape(2,5))
+# print(p.reshape(2,5))
 
 
 print(p[3]*p[4])
 
 print(np.ndim(p))
 
-print(p.reshape(2,5))
+# print(p.reshape(2,5))
 
 print(np.vstack(p))
 
@@ -52,3 +52,10 @@ f = np.arange(10,100)
 
 print(e)
 print(f)
+
+arr3 = np.linspace(1,100,5)#Start,Stop,Num
+arr4 = np.arange(1,100,5)#Start,Stop,Go(The amount of steps)
+
+print(arr3)
+print(arr4)
+
