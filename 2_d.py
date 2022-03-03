@@ -13,3 +13,5 @@ def median1(n):
 print(median1("median is" ))
 
 print((d_array > 45).sum())
+print((d_array == 45).sum())
+print((d_array < 45).sum())
