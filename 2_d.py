@@ -11,3 +11,5 @@ def median1(n):
     y=np.median(list)
     return n + str(y)
 print(median1("median is" ))
+
+print((d_array > 45).sum())
