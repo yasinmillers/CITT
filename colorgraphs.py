@@ -36,7 +36,7 @@ y1 = np.random.randint(100, size=(100))
 colors = np.random.randint(100, size=(100))
 sizes = 10 * np.random.randint(100, size=(100))
 
-plt.scatter(x1, y1, c=colors, s=sizes, cmap="jet", alpha=0.5)
+plt.scatter(x1, y1, c=colors, s=sizes, cmap="flag", alpha=0.5)
 plt.title("Random Color Graph", fontdict=font1)
 
 plt.colorbar()
