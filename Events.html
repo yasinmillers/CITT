@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Click me</button>
+    <p>No handler here.</p>
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click", () => {
+            console.log("Button clicked.");
+        });
+    </script>
+
+    <button id="one">Act-once button</button>
+    <script>
+        const button1 = document.getElementById("one");
+
+        function once() {
+            console.log("Done.");
+            button1.removeEventListener("click", once);
+        }
+        button1.addEventListener("click", once);
+    </script>
+
+    <button id="two">Click me any way you want</button>
+    <script>
+        const button2 = document.getElementById("two");
+        button2.addEventListener("click", event => {
+            if (event.button2 == 0) {
+                console.log("Left button");
+            } else if (event.button2 == 1) {
+                console.log("Middle button");
+            } else if (event.button2 == 2) {
+                console.log("Right button");
+            }
+        });
+    </script>
+</body>
+
+</html>
