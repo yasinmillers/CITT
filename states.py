@@ -109,7 +109,6 @@ def plot_data(data, state_name=None):
     plt.title("{} covid data".format(state_name))
     plt.legend()
 
-
     plt.subplot(2, 1, 2)
     # line chart for all data(cases, deaths, recovered, negative)
     plt.plot(dates, cases, label="cases")
