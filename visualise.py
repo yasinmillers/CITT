@@ -34,7 +34,7 @@ def Artist():
     ax[1, 0].set_xlabel('Artists')
     ax[1, 0].set_ylabel('Sales')
     ax[1, 0].set_title('Scatter graph')
-# histogram
+    # histogram
     ax[0, 2].hist(sales, color='b', edgecolor='black', linewidth=1.5)
     ax[0, 2].set_xlabel('Artists')
     ax[1, 0].set_ylabel('Sales')
