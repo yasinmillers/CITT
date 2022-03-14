@@ -26,3 +26,24 @@ def Artist():
     # line chart
     ax[1, 1].plot(artist, sales, color=color)
     ax[1, 1].set_title("line chart")
+
+    # scatter graph
+    sizes = [sales[i]/100 for i in range(len(sales))]
+    ax[1, 0].scatter(artist, sales, colors=color, s=sizes, alpha=0.5,
+                     marker='o', edgecolors='black')
+    ax[1, 0].set_xlabel('Artists')
+    ax[1, 0].set_ylabel('Sales')
+    ax[1, 0].set_title('Scatter graph')
+# histogram
+    ax[0, 2].hist(sales, color='b', edgecolor='black', linewidth=1.5)
+    ax[0, 2].set_xlabel('Artists')
+    ax[1, 0].set_ylabel('Sales')
+    ax[1, 0].set_title('Histogram graph')
+
+    # density graph
+    ax[1, 2].plot(artist, sales, 'o')
+    ax[1, 2].set_xlabel('Sales')
+    ax[1, 2].set_ylabel('Artists')
+    ax[1, 2].set_title('Density plot')
+
+    plt.show()
