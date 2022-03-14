@@ -15,3 +15,14 @@ def Artist():
     fig.suptitle("Artist and Sales", fontsize=20)
 
     ax[0, 0].set_title("Artist")
+    ax[0, 0].set_xlabel("Artist")
+    ax[0, 0].set_ylabel("Sales")
+    ax[0, 0].bar(artist, sales, color=color)
+    # pie chart
+    explode = [0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ax[0, 1].set_title("Artist")
+    ax[0, 1].pie(sales, explode=explode, labels=artist, colors=color,
+                 autopct="%1.1f%%", shadow=True, startangle=90)
+    # line chart
+    ax[1, 1].plot(artist, sales, color=color)
+    ax[1, 1].set_title("line chart")
