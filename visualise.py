@@ -47,3 +47,6 @@ def Artist():
     ax[1, 2].set_title('Density plot')
 
     plt.show()
+
+
+Artist()
