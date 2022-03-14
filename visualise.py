@@ -11,3 +11,7 @@ def Artist():
              "purple", "brown", "grey", "white", "cyan", "magenta"]  # color list
 
     fig, ax = plt.subplots(nrows=2, ncols=2)
+
+    fig.suptitle("Artist and Sales", fontsize=20)
+
+    ax[0, 0].set_title("Artist")
