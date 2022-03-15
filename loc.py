@@ -12,3 +12,4 @@ car_sales = {
     "harrier": [5000, 10000, 20000, 30000, 40000]
 
 }
+dates = pd.date_range('15/3/2022', periods=5, freq='M')
