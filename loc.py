@@ -14,3 +14,4 @@ car_sales = {
 }
 dates = pd.date_range('15/3/2022', periods=5, )
 data = pd.DataFrame(car_sales, index=dates)
+print(data)
