@@ -16,7 +16,7 @@ data = pd.read_csv('data.csv', skiprows=3)
 
 print(data)
 print(data.info)
-
+# visualising the graph
 data.plot(kind='bar')
 plt.title("Covid Data", fontdict=font1)
 plt.show()
