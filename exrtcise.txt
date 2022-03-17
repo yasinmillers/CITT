@@ -1,0 +1,13 @@
+print(stock_data['Open'].quantile([0.25,0.50,0.75,1]))
+print(stock_data['Close'].quantile([0.25,0.50,0.75,1]))
+print(stock_data['Close'].max())
+print(stock_data['Volume'].std())
+"""
+print(stock_data.groupby('Open')['Volume'].sum())
+
+
+print(stock_data.ndim)
+1. Download any data csv and find out the total average for 3 columns.
+2. Inside your new csv you downloaded, remove 1 column out of your 
+data frame.
+3. Use a scatter plot with different colors to display your data.
